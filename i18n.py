@@ -1,5 +1,9 @@
 supported_langs = ["en_US", "es_MX"]
 
+from pathlib import Path
+if not Path('.lang').exists():
+    open('.lang').write('en_US')
+
 current_lang = open('.lang').read().strip()
 if not current_lang:
     current_lang = "en_US"
