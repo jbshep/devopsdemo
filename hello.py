@@ -1,5 +1,7 @@
-name = input("Name? ")
+from i18n import current_lang, trans
+
+name = input(f"{trans[current_lang]['name']}? ")
 if name:
-    print(f"Hello, {name}!")
+    print(f"{trans[current_lang]['hello']}, {name}!")
 else:
-    print("Hello, World!")
+    print(f"{trans[current_lang]['hello']}, {trans[current_lang]['world']}!")
