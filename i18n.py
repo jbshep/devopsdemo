@@ -21,3 +21,4 @@ trans = {
     },
 }
 
+T = trans[current_lang]

@@ -1,7 +1,7 @@
-from i18n import current_lang, trans
+from i18n import T 
 
-name = input(f"{trans[current_lang]['name']}? ")
+name = input(f"{T['name']}? ")
 if name:
-    print(f"{trans[current_lang]['hello']}, {name}!")
+    print(f"{T['hello']}, {name}!")
 else:
-    print(f"{trans[current_lang]['hello']}, {trans[current_lang]['world']}!")
+    print(f"{T['hello']}, {T['world']}!")
